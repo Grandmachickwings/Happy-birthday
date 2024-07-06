@@ -1,0 +1,31 @@
+﻿
+@keyframes ghost-appear {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    50% {
+        opacity: 0.5;
+        transform: translateY(10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.ghost-text {
+    
+    margin:0 auto;
+    text-align:center;
+    font-size: 3em;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    animation: ghost-appear 2s ease-in-out forwards;
+}
+.hidden{
+    opacity:0;
+}
